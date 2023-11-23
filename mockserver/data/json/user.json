@@ -1,0 +1,49 @@
+{
+  "from": 0,
+  "limit": 5,
+  "total": 16,
+  "user": [
+    {
+      "name": "test 1",
+      "email": "ejempls@gmail.com",
+      "rol": "ADMIN_ROLE",
+      "status": true,
+      "google": false,
+      "uid": "6546dc2c813e044a8610980e"
+    },
+    {
+      "name": "test 3",
+      "email": "ejempls2@gmail.com",
+      "rol": "ADMIN_ROLE",
+      "status": true,
+      "google": false,
+      "img": "https://res.cloudinary.com/dx9mvz88a/image/upload/v1700267204/ozw9tzqnoju7ctyl9xqi.jpg",
+      "idImg": "ozw9tzqnoju7ctyl9xqi",
+      "uid": "6546dc3f813e044a86109816"
+    },
+    {
+      "name": "test 4",
+      "email": "ejempls3@gmail.com",
+      "rol": "ADMIN_ROLE",
+      "status": true,
+      "google": false,
+      "uid": "6546dc48813e044a8610981a"
+    },
+    {
+      "name": "test 5",
+      "email": "ejempls4@gmail.com",
+      "rol": "ADMIN_ROLE",
+      "status": true,
+      "google": false,
+      "uid": "6546dc4f813e044a8610981e"
+    },
+    {
+      "name": "test 6",
+      "email": "ejempls5@gmail.com",
+      "rol": "ADMIN_ROLE",
+      "status": true,
+      "google": false,
+      "uid": "6546dc56813e044a86109822"
+    }
+  ]
+}
