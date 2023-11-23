@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-2">
+      <h2>Respuesta:</h2>
+    </div>
+
+    <div class="col-4">
+      <button type="button" class="btn btn-success" (click)="getUsers()">
+        Listar Usuario
+      </button>
+    </div>
+  </div>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (item of userData; track $index) {
+    <tr>
+      <th>{{ item.name }}</th>
+      <th>{{ item.email }}</th>
+      <th>
+        @if (item.status) {
+        <span class="badge text-bg-success">{{ item.statusName }}</span>
+        } @else {
+        <span class="badge text-bg-danger">{{ item.statusName }}</span>
+        }
+      </th>
+    </tr>
+    }
+  </tbody>
+</table>
+
+@if (userData.length === 0 && userError) {
+<div class="alert alert-danger" role="alert">
+  {{ userError }}
+</div>
+} @else if (userData.length===0) {
+<p>No hay data</p>
+}

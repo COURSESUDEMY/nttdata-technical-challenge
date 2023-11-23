@@ -1,0 +1,217 @@
+<!-- <router-outlet></router-outlet> -->
+<div class="container accordion mt-3 mb-3" id="accordionData">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+      >
+        <strong> Manejo de Datos Asíncronos con RxJS</strong>
+      </button>
+    </h2>
+    <div
+      id="collapseOne"
+      class="accordion-collapse collapse show"
+      data-bs-parent="#accordionData"
+    >
+      <div class="accordion-body">
+        <p>
+          Supongamos que estás desarrollando una aplicación Angular que necesita
+          obtener datos de un servicio RESTful. Utiliza RxJS para realizar una
+          llamada HTTP a un endpoint simulado, transforma la respuesta para
+          extraer solo la información necesaria y muestra los datos en un
+          componente. Asegúrate de manejar cualquier posible error en la llamada
+          HTTP.
+        </p>
+        <hr />
+        <app-view-data-service></app-view-data-service>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+        <strong> Mejoras en la Navegación</strong>
+      </button>
+    </h2>
+    <div
+      id="collapseTwo"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionData"
+    >
+      <div class="accordion-body">
+        <p>
+          Imagina que estás trabajando en una aplicación Angular que tiene
+          múltiples módulos cargados de manera perezosa. Implementa un nuevo
+          módulo que se cargue solo cuando el usuario acceda a una ruta
+          específica. Asegúrate de que el módulo tenga su propio conjunto de
+          rutas internas y un componente asociado.
+        </p>
+        <hr />
+
+        <nav class="nav">
+          <a class="nav-link active" routerLink="/lazy">Cargar compomente</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseThree"
+        aria-expanded="false"
+        aria-controls="collapseThree"
+      >
+        <strong>Estrategias Prácticas de Optimización</strong>
+      </button>
+    </h2>
+    <div
+      id="collapseThree"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionData"
+    >
+      <div class="accordion-body">
+        <p>
+          Considerando una aplicación Angular existente, menciona tres áreas
+          específicas donde podrías aplicar técnicas de optimización para
+          mejorar el rendimiento. Proporciona ejemplos concretos de cómo
+          implementarías estas optimizaciones en el código.
+        </p>
+        <hr />
+
+        <ol class="list-group list-group-numbered">
+          <li
+            class="list-group-item d-flex justify-content-between align-items-start"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">
+                Optimización del rendimiento de las vistas
+              </div>
+
+              <ul>
+                <li>
+                  <span class="fw-bold"
+                    >Cambiar la estrategia de detección de cambios:</span
+                  >
+                  <p>
+                    Puedes cambiar la estrategia de detección de cambios por
+                    defecto de Angular. Por ejemplo, puedes usar OnPush para que
+                    los componentes solo se vuelvan a renderizar cuando cambian
+                    las referencias de entrada.
+                  </p>
+                </li>
+                <li>
+                  <span class="fw-bold"
+                    >Usar la directiva *ngIf con moderación:</span
+                  >
+                  <p>
+                    El uso excesivo de *ngIf puede afectar el rendimiento, ya
+                    que los elementos se agregan y eliminan del DOM. Utiliza
+                    *ngIf con moderación y considera otras técnicas, como la
+                    gestión de visibilidad a través de clases CSS.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-start"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Optimización de solicitudes HTTP</div>
+              <ul>
+                <li>
+                  <span class="fw-bold"
+                    >Caché de datos y estrategias de carga perezosa:</span
+                  >
+                  <p>
+                    Implementa estrategias de caché para almacenar localmente
+                    datos que no cambian con frecuencia. Además, considera la
+                    carga perezosa para cargar datos solo cuando sea necesario.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-start"
+          >
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Optimización del tamaño del paquete</div>
+              <ul>
+                <li>
+                  <span class="fw-bold"
+                    >Aprovechar la Tree-Shakable Providers:</span
+                  >
+                  <p>
+                    Asegúrate de que tus servicios y dependencias estén marcados
+                    como "tree-shakable" para que Angular pueda eliminar el
+                    código no utilizado durante la construcción.
+                  </p>
+                </li>
+                <li>
+                  <span class="fw-bold">División de módulos:</span>
+                  <p>
+                    Divide tu aplicación en módulos más pequeños y específicos.
+                    Esto puede reducir el tamaño de los paquetes y mejorar los
+                    tiempos de carga. Utiliza el lazy loading para cargar
+                    módulos solo cuando sea necesario.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseFour"
+        aria-expanded="false"
+        aria-controls="collapseFour"
+      >
+        <strong>Pruebas Unitarias para un Escenario Real</strong>
+      </button>
+    </h2>
+    <div
+      id="collapseFour"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionData"
+    >
+      <div class="accordion-body">
+        <p>
+          Supongamos que tienes un componente Angular que muestra una lista de
+          elementos obtenidos de un servicio externo. Escribe una prueba
+          unitaria utilizando TestBed y proporciona mocks para el servicio
+          externo. Asegúrate de cubrir casos tanto de éxito como de error en la
+          respuesta del servicio.
+        </p>
+        <hr />
+
+        <ul>
+          <li>servicio: DataService</li>
+          <li>componenente: app-view-data-service</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
